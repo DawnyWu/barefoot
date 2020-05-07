@@ -1,5 +1,7 @@
 # Barefoot for China Cities
 
+map/Dockerfile 需要修改。原文gradle使用的http, 而现在gradle已经不支持http。所以要安装最新osmasis和java 8来进行gradle才可以成功。
+
 ## Map server
 
 1. Install prerequisites.
