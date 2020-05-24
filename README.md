@@ -1,5 +1,11 @@
 # Barefoot for China Cities
 
+需要手动运行Dockerfile中的最后几行
+
+osmasis 不用checkout tag,使用header就可以
+
+java 8安装有困难，转而安装java 11
+
 map/Dockerfile 需要修改。原文gradle使用的http, 而现在gradle已经不支持http。所以要安装最新osmasis和java 8来进行gradle才可以成功。
 
 ## Map server
