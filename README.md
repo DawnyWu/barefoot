@@ -24,6 +24,8 @@ map/Dockerfile 需要修改。原文gradle使用的http, 而现在gradle已经�
     curl http://download.geofabrik.de/asia/china-latest.osm.pbf -o barefoot/map/osm/china.osm.pbf
     osmosis --read-pbf file=china-latest.osm.pbf --bounding-box left=126.506130 right=126.771862 bottom=45.657920 top=45.830905 --write-pbf file=harbin.osm.pbf
     #  porto(-8.692389, -8.527213430999998) (41.108094, 41.238620999999995)
+    #  chengdu 范围 [30.727818,104.043333], [30.726490,104.129076], [30.655191,104.129591], [30.652828,104.042102]
+    #  lat min 30.652828  max 30.727818 ; lng min 104.042102 max 104.129591
     ```
 
     If you want to change the city, remember to modify the input in [this line](https://github.com/boathit/barefoot/blob/master/map/osm/import.sh#L28) in import.sh.
