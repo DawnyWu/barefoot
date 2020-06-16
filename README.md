@@ -10,6 +10,10 @@ map/Dockerfile 需要修改。原文gradle使用的http, 而现在gradle已经�
 
 ## Map server
 
+postgres port 5432
+
+maching  port 1234
+
 1. Install prerequisites.
 
     - Docker Engine (version 1.6 or higher, see [https://docs.docker.com/installation/ubuntulinux/](https://docs.docker.com/installation/ubuntulinux/))
