@@ -48,7 +48,7 @@ maching  port 1234
 4. Create Docker container.
 
     ``` bash
-    sudo docker run -it -p 5432:5432 --name="harbin-map" -v ${PWD}/map/:/mnt/map imap
+    sudo docker run -it -p 5432:5432 --name="chengdu-map" -v ${PWD}/map/:/mnt/map imap
     ```
 
 5. Import OSM extract (in the container).
