@@ -42,13 +42,13 @@ maching  port 1234
 
     ``` bash
     cd barefoot
-    docker build -t imap ./map
+    sudo docker build -t imap ./map
     ```
 
 4. Create Docker container.
 
     ``` bash
-    docker run -it -p 5432:5432 --name="harbin-map" -v ${PWD}/map/:/mnt/map imap
+    sudo docker run -it -p 5432:5432 --name="harbin-map" -v ${PWD}/map/:/mnt/map imap
     ```
 
 5. Import OSM extract (in the container).
@@ -62,19 +62,19 @@ maching  port 1234
     If we want to attach it again, we can do
 
     ```bash
-    docker attach <container id>
+    sudo docker attach <container id>
     ```
 
 6. Make sure the container is running ("up").
 
     ``` bash
-    docker ps -a
+    sudo docker ps -a
     ...
     ```
 
 We can restart the created container (if it is stopped)
 ```bash
-docker start --interactive harbin-map
+sudo docker start --interactive harbin-map
 ```
 
 
