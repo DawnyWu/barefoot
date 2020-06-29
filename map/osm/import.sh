@@ -25,8 +25,8 @@ then
 	mode=$6
 elif [ "$#" -eq "0" ]
 then
-	input=/mnt/map/osm/harbin.osm.pbf
-	database=harbin
+	input=/mnt/map/osm/chengdu.osm.pbf
+	database=chengdu
 	user=osmuser
 	password=pass
 	config=/mnt/map/tools/road-types.json
