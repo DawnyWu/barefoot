@@ -33,6 +33,7 @@ maching  port 1234
     #  chengdu 范围 [30.727818,104.043333], [30.726490,104.129076], [30.655191,104.129591], [30.652828,104.042102]
     #  lat min 30.652828  max 30.727818 ; lng min 104.042102 max 104.129591
     #  gcj2wgs 104.1270621408045 104.039658790445 30.73025380005466 30.65530153928298
+    # osmosis --read-pbf file=china-170101.osm.pbf --bounding-box left=104.039658790445 right=104.1270621408045 bottom=30.65530153928298 top=30.73025380005466  --write-pbf file=chengdu.osm.pbf
     ```
 
     If you want to change the city, remember to modify the input in [this line](https://github.com/boathit/barefoot/blob/master/map/osm/import.sh#L28) in import.sh.
