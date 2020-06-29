@@ -94,7 +94,7 @@ sudo docker start --interactive harbin-map
 3. Start server with standard configuration for map server and map matching, and option for GeoJSON output format.
 
     ``` bash
-    java -jar target/barefoot-0.1.5-matcher-jar-with-dependencies.jar --geojson config/server.properties config/harbin.properties
+    java -jar target/barefoot-0.1.5-matcher-jar-with-dependencies.jar --geojson config/server.properties config/chengdu.properties
     ```
 
     _Note: Stop server with Ctrl-c._
