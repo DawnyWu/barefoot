@@ -2,8 +2,7 @@
 
 #
 # Copyright (C) 2015, BMW Car IT GmbH
-#
-# Author: Sebastian Mattheis <sebastian.mattheis@bmw-carit.de>
+# # Author: Sebastian Mattheis <sebastian.mattheis@bmw-carit.de>
 #
 # Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
 # in compliance with the License. You may obtain a copy of the License at

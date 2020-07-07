@@ -20,6 +20,6 @@ RUN apt-get update && apt-get -y install patch postgresql-9.3-postgis-2.1 git op
 RUN patch /etc/postgresql/9.3/main/postgresql.conf < /opt/pgsql/postgresql.conf.patch && patch /etc/postgresql/9.3/main/pg_hba.conf < /opt/pgsql/pg_hba.conf.patch && echo "export HOME=/root" >> /root/.bashrc
 #RUN cd /opt/ && git clone https://github.com/openstreetmap/osmosis.git && cd osmosis && git checkout tags/0.43.1 && ./gradlew assemble && echo "export PATH=${PATH}:/opt/osmosis/package/bin" >> /root/.bashrc && echo "host all all all md5" >> /etc/postgresql/9.3/main/pg_hba.conf
 RUN cd /opt/ && git clone https://github.com/openstreetmap/osmosis.git && cd osmosis 
-RUN sudo apt-get -y install software-properties-common & sudo add-apt-repository ppa:openjdk-r/ppa & sudo apt-get update & sudo apt install openjdk-11-jdk
-RUN ./gradlew assemble && echo "export PATH=${PATH}:/opt/osmosis/package/bin" >> /root/.bashrc && echo "host all all all md5" >> /etc/postgresql/9.3/main/pg_hba.conf
-CMD service postgresql start && /bin/bash --rcfile /root/.bashrc
+RUN sudo apt-get -y install software-properties-common && sudo add-apt-repository ppa:openjdk-r/ppa && sudo apt-get update && sudo apt install openjdk-11-jdk -y
+#RUN ./gradlew assemble && echo "export PATH=${PATH}:/opt/osmosis/package/bin" >> /root/.bashrc && echo "host all all all md5" >> /etc/postgresql/9.3/main/pg_hba.conf
+#CMD service postgresql start && /bin/bash --rcfile /root/.bashrc
