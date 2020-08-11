@@ -45,11 +45,14 @@ maching  port 1234
     sudo docker build -t imap ./map
     ```
 
+
 4. Create Docker container.
 
     ``` bash
     sudo docker run -it -p 5432:5432 --name="chengdu-map" -v ${PWD}/map/:/mnt/map imap
     ```
+    进到里面装gradlew
+
 
 5. Import OSM extract (in the container).
 
